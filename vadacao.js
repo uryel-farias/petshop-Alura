@@ -1,8 +1,8 @@
-const dataNascimento = document.querySelector('#nascimento');
+//const dataNascimento = document.querySelector('#nascimento');
 
-dataNascimento.addEventListener('blur', (evento) =>{
-    validaDataNascimento(evento.target);
-})
+//dataNascimento.addEventListener('blur', (evento) =>{
+//    validaDataNascimento(evento.target);
+//})
 
 export function valida(input){
     const tipoDeInput = input.dataset.tipo;
@@ -60,6 +60,9 @@ const mensagensDeErro = {
     },
     estado: {
         valueMissing: 'O campo de estado não pode estar vazio.'
+    },
+    preco: {
+        valueMissing: 'O campo de preço não pode estar vazio.'
     }
 }
 
